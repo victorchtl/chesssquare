@@ -1,0 +1,18 @@
+#wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2565ae;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logoico {
+  margin-right: 15px;
+}

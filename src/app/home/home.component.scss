@@ -1,0 +1,66 @@
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #2565ae;
+  display: flex;
+}
+
+#left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 75px;
+}
+
+#timer {
+  width: 100%;
+
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#squaretofind {
+  font-size: 75px;
+}
+
+#chessboard {
+  width: 680px;
+  height: 680px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dark {
+  background-color: #0f5298;
+  width: 85px;
+  height: 85px;
+  opacity: 1;
+}
+
+.light {
+  background-color: #d5f3fe;
+  width: 85px;
+  height: 85px;
+  opacity: 1;
+}
+
+.dark:hover {
+  opacity: 0.8;
+}
+
+.light:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,110 @@
+<app-topbar></app-topbar>
+<div id="wrapper">
+
+  <div id="left">
+
+    <div id="chessboard">
+
+      <div id="a8" class="light" (click)="match($event)"></div>
+      <div id="b8" class="dark" (click)="match($event)"></div>
+      <div id="c8" class="light" (click)="match($event)"></div>
+      <div id="d8" class="dark" (click)="match($event)"></div>
+      <div id="e8" class="light" (click)="match($event)"></div>
+      <div id="f8" class="dark" (click)="match($event)"></div>
+      <div id="g8" class="light" (click)="match($event)"></div>
+      <div id="h8" class="dark" (click)="match($event)"></div>
+
+      <div id="a7" class="dark" (click)="match($event)"></div>
+      <div id="b7" class="light" (click)="match($event)"></div>
+      <div id="c7" class="dark" (click)="match($event)"></div>
+      <div id="d7" class="light" (click)="match($event)"></div>
+      <div id="e7" class="dark" (click)="match($event)"></div>
+      <div id="f7" class="light" (click)="match($event)"></div>
+      <div id="g7" class="dark" (click)="match($event)"></div>
+      <div id="h7" class="light" (click)="match($event)"></div>
+
+      <div id="a6" class="light" (click)="match($event)"></div>
+      <div id="b6" class="dark" (click)="match($event)"></div>
+      <div id="c6" class="light" (click)="match($event)"></div>
+      <div id="d6" class="dark" (click)="match($event)"></div>
+      <div id="e6" class="light" (click)="match($event)"></div>
+      <div id="f6" class="dark" (click)="match($event)"></div>
+      <div id="g6" class="light" (click)="match($event)"></div>
+      <div id="h6" class="dark" (click)="match($event)"></div>
+
+      <div id="a5" class="dark" (click)="match($event)"></div>
+      <div id="b5" class="light" (click)="match($event)"></div>
+      <div id="c5" class="dark" (click)="match($event)"></div>
+      <div id="d5" class="light" (click)="match($event)"></div>
+      <div id="e5" class="dark" (click)="match($event)"></div>
+      <div id="f5" class="light" (click)="match($event)"></div>
+      <div id="g5" class="dark" (click)="match($event)"></div>
+      <div id="h5" class="light" (click)="match($event)"></div>
+
+      <div id="a4" class="light" (click)="match($event)"></div>
+      <div id="b4" class="dark" (click)="match($event)"></div>
+      <div id="c4" class="light" (click)="match($event)"></div>
+      <div id="d4" class="dark" (click)="match($event)"></div>
+      <div id="e4" class="light" (click)="match($event)"></div>
+      <div id="f4" class="dark" (click)="match($event)"></div>
+      <div id="g4" class="light" (click)="match($event)"></div>
+      <div id="h4" class="dark" (click)="match($event)"></div>
+
+      <div id="a3" class="dark" (click)="match($event)"></div>
+      <div id="b3" class="light" (click)="match($event)"></div>
+      <div id="c3" class="dark" (click)="match($event)"></div>
+      <div id="d3" class="light" (click)="match($event)"></div>
+      <div id="e3" class="dark" (click)="match($event)"></div>
+      <div id="f3" class="light" (click)="match($event)"></div>
+      <div id="g3" class="dark" (click)="match($event)"></div>
+      <div id="h3" class="light" (click)="match($event)"></div>
+
+      <div id="a2" class="light" (click)="match($event)"></div>
+      <div id="b2" class="dark" (click)="match($event)"></div>
+      <div id="c2" class="light" (click)="match($event)"></div>
+      <div id="d2" class="dark" (click)="match($event)"></div>
+      <div id="e2" class="light" (click)="match($event)"></div>
+      <div id="f2" class="dark" (click)="match($event)"></div>
+      <div id="g2" class="light" (click)="match($event)"></div>
+      <div id="h2" class="dark" (click)="match($event)"></div>
+
+      <div id="a1" class="dark" (click)="match($event)"></div>
+      <div id="b1" class="light" (click)="match($event)"></div>
+      <div id="c1" class="dark" (click)="match($event)"></div>
+      <div id="d1" class="light" (click)="match($event)"></div>
+      <div id="e1" class="dark" (click)="match($event)"></div>
+      <div id="f1" class="light" (click)="match($event)"></div>
+      <div id="g1" class="dark" (click)="match($event)"></div>
+      <div id="h1" class="light" (click)="match($event)"></div>
+
+    </div>
+
+  </div>
+
+  <div id="right">
+
+    <div id="timer">
+      <div id="timerlive">
+        Live Time {{seconds}} : {{ milliseconds }}
+      </div>
+      <div id="timeraverage">
+        Average Time {{averageSeconds}} : {{ averageMilliseconds }}
+      </div>
+
+    </div>
+
+    <div id="squaretofind">{{ randomValue }}</div>
+
+    <div id="startstop">
+      <!-- <mat-checkbox class="example-margin">Check me!</mat-checkbox> -->
+      <button mat-raised-button (click)="start()">START</button>
+      <button mat-raised-button (click)="stop()">STOP</button>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+<router-outlet></router-outlet>
